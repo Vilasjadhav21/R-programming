@@ -1,0 +1,24 @@
+v1=seq(1,100,length.out=5)
+v1
+v2=seq(1,100,by=5)
+v2
+sum(v1)
+v3=c(1,2,3,NA)
+sum(v3)
+sum(v3,na.rm=TRUE)
+
+data=c("M","F","F","M","F")
+f=factor(data)
+f
+f1=factor(data,levels=c("M","F","T"))
+f1
+f2=factor(data,levels=c("M","F","T"),
+      labels=c("male","female","transgender"))
+f2
+f3=factor(data,levels=c("M","F","T"),
+          labels=c("male","female","transgender"),
+          ordered=TRUE)
+f3
+is.factor(f3)
+f3[2]="transgender"
+f3
