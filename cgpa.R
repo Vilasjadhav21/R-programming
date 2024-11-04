@@ -12,4 +12,5 @@ eleg
 eleg=((cgpa>8.0)|| (cer=="Yes"))
 eleg
 }
-
+help("vector")
+help(seq)
